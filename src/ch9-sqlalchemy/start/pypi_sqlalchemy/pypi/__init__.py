@@ -1,4 +1,10 @@
+import os
+
+import sys
+sys.path.insert(0, "./pypi")
+
 from pyramid.config import Configurator
+from pypi.data.db_session import DbSession
 
 
 def main(global_config, **settings):
@@ -45,3 +51,9 @@ def init_routing(config):
     config.add_route('cms_page', '*subpath')
 
     config.scan()
+
+
+def init_db(config):
+    db_file = os.path.abspath(os.path.join(os.path.dirname(__file__), 'db', 'pypi.sqlite'))
+
+    DbSession.global_init(db_file)

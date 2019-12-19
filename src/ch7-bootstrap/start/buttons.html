@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet"
+          href="http://oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" >
+</head>
+<body>
+
+<style>
+    form {
+        padding: 10px;
+        padding-right: 30px;
+        max-width: 450px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #c2c2c2;
+        border: 1px solid #b5b5b5;
+    }
+    input {
+        margin: 10px;
+    }
+    .actions, h2 {
+        text-align: center;
+    }
+</style>
+
+<form action="" method="POST">
+    <h2>Login</h2>
+    <input class="form-control" type="text" placeholder="email" required >
+    <input class="form-control" type="text" placeholder="password" required >
+    <div class="actions">
+        <button type="submit" class="btn btn-primary">Login</button>
+        or <a href="/register" class="btn btn-success">Register</a>
+    </div>
+</form>
+</body>
+</html>

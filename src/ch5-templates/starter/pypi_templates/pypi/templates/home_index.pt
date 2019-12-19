@@ -2,7 +2,7 @@
     <div metal:fill-slot="content">
 
         <div class="content">
-            <h1>Some packages</h1>
+            <h1>Some Packages</h1>
             <div class="package" tal:repeat="p packages">
                 <span class="title">${p.name}</span>
                 <span class="version" tal:condition="p.version">${p.version}</span>
@@ -10,9 +10,9 @@
             </div>
         </div>
 
-    </div>
-
     <div metal:fill-slot="additional-css" tal:omit-tag>
         <!-- additional css from the page -->
+    </div>
+
     </div>
 </div>

@@ -5,6 +5,7 @@
 *~
 .coverage
 coverage.xml
+venv/
 build/
 dist/
 .tox/
